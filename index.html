@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>서울숲 저녁 지도</title>
-<meta name="description" content="서울숲 산책 끝나고 걸어서 가는 데이트 저녁 다섯 곳">
+<meta name="description" content="저녁 먹고 나서 걸어서 서울숲 산책 가기 좋은 데이트 저녁 다섯 곳">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%23d9412b'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css">
@@ -76,6 +76,12 @@ h1{font-size:46px;font-weight:800;letter-spacing:-.035em;line-height:1.12;margin
 .facts{display:flex;gap:28px;margin:16px 0 14px;font-size:14px}
 .facts dt{color:var(--ink-3);font-size:12.5px}
 .facts dd{font-weight:700}
+.acts{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.act{font:inherit;font-size:13.5px;font-weight:700;line-height:1.2;color:var(--ink-2);background:#fff;border:1px solid #cfcdc6;border-radius:6px;padding:0 12px 0 10px;min-height:36px;display:inline-flex;align-items:center;gap:6px;text-decoration:none;cursor:pointer}
+.act:hover{border-color:var(--ink);color:var(--ink)}
+.act svg{flex:none;width:16px;height:16px}
+.nv rect{fill:#03c75a}.nv path{fill:#fff}
+.share svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .strip{display:grid;gap:6px;grid-auto-rows:230px}
 .strip.s3{grid-template-columns:1.4fr 1fr 1fr}
 .strip.s2{grid-template-columns:1.4fr 1fr}
@@ -106,6 +112,8 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
 .tl time{font-weight:800;color:var(--ink)}
 .foot{margin-top:40px;font-size:12.5px;color:var(--ink-3)}
 .foot p+p{margin-top:4px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:20;transform:translate(-50%,8px);background:var(--ink);color:#fff;font-size:14px;font-weight:600;padding:10px 16px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.18);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
 
 @media (max-width:980px){
   .layout{grid-template-columns:1fr}
@@ -129,7 +137,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
 <div class="layout">
 <main class="col">
   <p class="brand">서울숲 저녁 지도</p>
-  <h1>산책 끝나고,<br>걸어서 저녁 먹으러</h1>
+  <h1>저녁 먹고 나서,<br>서울숲 산책하러</h1>
   <p class="intro">서울숲역에서 걸어서 10분 안쪽, 둘이 가서 1인 1~3만 원이면 되는 양식과 아시안 다섯 곳이에요. 번호는 역에서 가까운 순서예요.</p>
   <p class="intro small">2026년 9월에 리뷰와 블로그를 모아 정리했어요. 가격과 영업시간은 가기 전에 한 번 더 확인하세요.</p>
 
@@ -149,6 +157,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
   <article class="spot" id="qua" data-food="A" data-rsv="0" data-low="1" data-style="share own">
 <header class="spot-h"><span class="no" aria-hidden="true">1</span><div><h2>꾸아</h2><p class="kind">베트남 음식</p></div></header>
 <dl class="facts"><div><dt>걸어서</dt><dd>서울숲역에서 약 5분</dd></div><div><dt>예산</dt><dd>1인 1.5~2만 원</dd></div></dl>
+<div class="acts"><a class="act" href="https://map.naver.com/p/entry/place/1846605156" target="_blank" rel="noopener" aria-label="네이버 지도에서 꾸아 보기"><svg class="nv" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="4"/><path d="M4.5 4.25h2.3l2.4 3.55V4.25h2.3v7.5H9.2L6.8 8.2v3.55H4.5z"/></svg>네이버 지도</a><button class="act share" type="button" aria-label="꾸아 네이버 지도 링크 공유"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.75v8.5M4.75 4.75 8 1.75l3.25 3M5.25 7H4a.75.75 0 0 0-.75.75v6c0 .41.34.75.75.75h8c.41 0 .75-.34.75-.75v-6A.75.75 0 0 0 12 7h-1.25"/></svg>공유</button></div>
 <div class="strip s2"><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20260921051317661_photo_90c8318b2f0d.webp" alt="꾸아, 직화 쌀국수" loading="lazy" width="400" height="300"><figcaption>직화 쌀국수</figcaption></figure><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20260921051317985_photo_90c8318b2f0d.webp" alt="꾸아, 계란 올린 쌀국수" loading="lazy" width="400" height="300"><figcaption>계란 올린 쌀국수</figcaption></figure></div>
 <p class="credit">사진 다이닝코드 사용자 리뷰</p>
 <p class="body">지하로 내려가는 계단부터 라탄 조명과 베트남 모자로 꾸며져 있어서, 잠깐 여행 온 기분이 나는 곳이에요. 오래된 금성 TV 같은 소품이 곳곳에 있어요.</p>
@@ -160,6 +169,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
 </article><article class="spot" id="onryang" data-food="W" data-rsv="0" data-low="0" data-style="share">
 <header class="spot-h"><span class="no" aria-hidden="true">2</span><div><h2>온량</h2><p class="kind">파스타와 커틀렛</p></div></header>
 <dl class="facts"><div><dt>걸어서</dt><dd>서울숲역에서 약 5분</dd></div><div><dt>예산</dt><dd>1인 2만 원대</dd></div></dl>
+<div class="acts"><a class="act" href="https://map.naver.com/p/entry/place/1584576344" target="_blank" rel="noopener" aria-label="네이버 지도에서 온량 보기"><svg class="nv" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="4"/><path d="M4.5 4.25h2.3l2.4 3.55V4.25h2.3v7.5H9.2L6.8 8.2v3.55H4.5z"/></svg>네이버 지도</a><button class="act share" type="button" aria-label="온량 네이버 지도 링크 공유"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.75v8.5M4.75 4.75 8 1.75l3.25 3M5.25 7H4a.75.75 0 0 0-.75.75v6c0 .41.34.75.75.75h8c.41 0 .75-.34.75-.75v-6A.75.75 0 0 0 12 7h-1.25"/></svg>공유</button></div>
 <div class="strip s3"><figure><img src="https://tong.visitkorea.or.kr/cms/resource/23/2894923_image2_1.jpg" alt="온량, 토마호크 포크 커틀렛" loading="lazy" width="400" height="300"><figcaption>토마호크 포크 커틀렛</figcaption></figure><figure><img src="https://tong.visitkorea.or.kr/cms/resource/25/2894925_image2_1.jpg" alt="온량, 커틀렛과 파스타" loading="lazy" width="400" height="300"><figcaption>커틀렛과 파스타</figcaption></figure><figure><img src="https://tong.visitkorea.or.kr/cms/resource/22/2894922_image2_1.jpg" alt="온량, 가게 안" loading="lazy" width="400" height="300"><figcaption>가게 안</figcaption></figure></div>
 <p class="credit">사진 한국관광공사(공공누리)</p>
 <p class="body">특급호텔 출신 셰프들이 하는 작은 양식당이에요. 노란 조명에 원목 가구, 벽을 채운 빈티지 엽서 덕분에 조금 어둡고 아늑한 분위기예요.</p>
@@ -171,6 +181,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
 </article><article class="spot" id="hoho" data-food="A" data-rsv="1" data-low="1" data-style="own">
 <header class="spot-h"><span class="no" aria-hidden="true">3</span><div><h2>호호식당</h2><p class="kind">일본 가정식</p></div></header>
 <dl class="facts"><div><dt>걸어서</dt><dd>서울숲역에서 약 6분</dd></div><div><dt>예산</dt><dd>1인 1.5~2만 원</dd></div></dl>
+<div class="acts"><a class="act" href="https://map.naver.com/p/entry/place/1836968731" target="_blank" rel="noopener" aria-label="네이버 지도에서 호호식당 보기"><svg class="nv" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="4"/><path d="M4.5 4.25h2.3l2.4 3.55V4.25h2.3v7.5H9.2L6.8 8.2v3.55H4.5z"/></svg>네이버 지도</a><button class="act share" type="button" aria-label="호호식당 네이버 지도 링크 공유"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.75v8.5M4.75 4.75 8 1.75l3.25 3M5.25 7H4a.75.75 0 0 0-.75.75v6c0 .41.34.75.75.75h8c.41 0 .75-.34.75-.75v-6A.75.75 0 0 0 12 7h-1.25"/></svg>공유</button></div>
 <div class="strip s3"><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20260624011903655_photo_a3b78a488355.webp" alt="호호식당, 벽돌집 외관" loading="lazy" width="400" height="300"><figcaption>벽돌집 외관</figcaption></figure><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20260624030421020_photo_a3b78a488355.webp" alt="호호식당, 사케동 한 상" loading="lazy" width="400" height="300"><figcaption>사케동 한 상</figcaption></figure><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20260603102509_photo3_882a1daab99c.webp" alt="호호식당, 카츠 정식" loading="lazy" width="400" height="300"><figcaption>카츠 정식</figcaption></figure></div>
 <p class="credit">사진 다이닝코드 사용자 리뷰</p>
 <p class="body">붉은 벽돌 단독주택을 고친 일본 가정식집이에요. 마당엔 식물이 있고 2층은 통창이라 해 질 무렵이 제일 좋아요. 블루리본을 6년 연속 받았어요.</p>
@@ -182,6 +193,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
 </article><article class="spot" id="chori" data-food="A" data-rsv="0" data-low="0" data-style="own">
 <header class="spot-h"><span class="no" aria-hidden="true">4</span><div><h2>쵸리상경</h2><p class="kind">솥밥</p></div></header>
 <dl class="facts"><div><dt>걸어서</dt><dd>서울숲역에서 약 6분</dd></div><div><dt>예산</dt><dd>1인 2~2.5만 원</dd></div></dl>
+<div class="acts"><a class="act" href="https://map.naver.com/p/entry/place/1368783268" target="_blank" rel="noopener" aria-label="네이버 지도에서 쵸리상경 보기"><svg class="nv" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="4"/><path d="M4.5 4.25h2.3l2.4 3.55V4.25h2.3v7.5H9.2L6.8 8.2v3.55H4.5z"/></svg>네이버 지도</a><button class="act share" type="button" aria-label="쵸리상경 네이버 지도 링크 공유"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.75v8.5M4.75 4.75 8 1.75l3.25 3M5.25 7H4a.75.75 0 0 0-.75.75v6c0 .41.34.75.75.75h8c.41 0 .75-.34.75-.75v-6A.75.75 0 0 0 12 7h-1.25"/></svg>공유</button></div>
 <div class="strip s3"><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20250529114714_photo1_88953e75c098.webp" alt="쵸리상경, 연어 솥밥" loading="lazy" width="400" height="300"><figcaption>연어 솥밥</figcaption></figure><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20250529114714_photo2_88953e75c098.webp" alt="쵸리상경, 스테이크 솥밥" loading="lazy" width="400" height="300"><figcaption>스테이크 솥밥</figcaption></figure><figure><img src="https://d12zq4w4guyljn.cloudfront.net/20250907070927_photo2_4a8d077bdb6a.webp" alt="쵸리상경, 창가 바 좌석" loading="lazy" width="400" height="300"><figcaption>창가 바 좌석</figcaption></figure></div>
 <p class="credit">사진 다이닝코드 사용자 리뷰</p>
 <p class="body">서울숲에서 솥밥 하면 제일 먼저 나오는 집이에요. 잘 구운 연어를 올린 연어 솥밥이 간판이고, 같이 나오는 김에 싸 먹는 게 포인트예요. 다 먹을 때쯤 솥에 물을 부어 숭늉으로 마무리해요.</p>
@@ -193,6 +205,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
 </article><article class="spot" id="darobe" data-food="W" data-rsv="1" data-low="0" data-style="share">
 <header class="spot-h"><span class="no" aria-hidden="true">5</span><div><h2>다로베</h2><p class="kind">나폴리 화덕피자</p></div></header>
 <dl class="facts"><div><dt>걸어서</dt><dd>서울숲역에서 약 8분</dd></div><div><dt>예산</dt><dd>1인 2.5~3만 원</dd></div></dl>
+<div class="acts"><a class="act" href="https://map.naver.com/p/entry/place/1569901520" target="_blank" rel="noopener" aria-label="네이버 지도에서 다로베 보기"><svg class="nv" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="4"/><path d="M4.5 4.25h2.3l2.4 3.55V4.25h2.3v7.5H9.2L6.8 8.2v3.55H4.5z"/></svg>네이버 지도</a><button class="act share" type="button" aria-label="다로베 네이버 지도 링크 공유"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.75v8.5M4.75 4.75 8 1.75l3.25 3M5.25 7H4a.75.75 0 0 0-.75.75v6c0 .41.34.75.75.75h8c.41 0 .75-.34.75-.75v-6A.75.75 0 0 0 12 7h-1.25"/></svg>공유</button></div>
 <div class="strip s3"><figure><img src="https://d2uja84sd90jmv.cloudfront.net/posts/JVZknMnn0qiIS2cKXv05kw/ms.jpg" alt="다로베, 마르게리타" loading="lazy" width="400" height="300"><figcaption>마르게리타</figcaption></figure><figure><img src="https://d2uja84sd90jmv.cloudfront.net/posts/pgZ7K30Xm9hUeSKF9BqezQ/ms.jpg" alt="다로베, 다로베 피자" loading="lazy" width="400" height="300"><figcaption>다로베 피자</figcaption></figure><figure><img src="https://d2uja84sd90jmv.cloudfront.net/posts/tU768uInqgBUFN9L7BspDg/ms.jpg" alt="다로베, 가게 입구" loading="lazy" width="400" height="300"><figcaption>가게 입구</figcaption></figure></div>
 <p class="credit">사진 뽈레 사용자 리뷰</p>
 <p class="body">성수동 나폴리 피자 하면 빠지지 않는 집이에요. 살바토레 쿠오모 총괄셰프 출신이 차렸고, 오픈 키친이라 화덕에서 피자가 나오는 걸 볼 수 있어요.</p>
@@ -207,8 +220,8 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
     <h2>이 순서로 움직이면 편해요</h2>
     <ol class="tl">
       <li><time>17:00</time><span>브레이크 타임이 끝나요. 쵸리상경이나 꾸아처럼 줄 서는 곳이면 이때 원격 줄서기부터 걸어 두세요.</span></li>
-      <li><time>18:00</time><span>서울숲을 한 바퀴 걸어요. 9월 말은 여섯 시 반 전후로 해가 져요.</span></li>
-      <li><time>19:00</time><span>공원 북쪽 카페거리로 나와 저녁. 차는 서울숲 공영주차장에 두는 게 편해요.</span></li>
+      <li><time>18:00</time><span>공원 북쪽 카페거리에서 저녁. 차는 서울숲 공영주차장에 두는 게 편해요.</span></li>
+      <li><time>19:00</time><span>저녁 먹고 서울숲을 한 바퀴 걸어요. 9월 말은 여섯 시 반 전후로 해가 져서 밤 산책이 돼요.</span></li>
     </ol>
   </section>
 
@@ -236,6 +249,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
   </div>
 </aside>
 </div>
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
 
 <script>
 (function(){
@@ -283,6 +297,28 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)focus(e.target.id)})},{rootMargin:'-40% 0px -55% 0px'});
     spots.forEach(function(s){io.observe(s)});
   }
+  var toast=document.getElementById('toast'),tt;
+  function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},2400)}
+  function copy(url){
+    function done(){say('네이버 지도 링크를 복사했어요')}
+    function old(){
+      var t=document.createElement('textarea'),ok=false;
+      t.value=url;t.setAttribute('readonly','');t.style.cssText='position:fixed;top:0;left:0;opacity:0';
+      document.body.appendChild(t);t.select();t.setSelectionRange(0,url.length);
+      try{ok=document.execCommand('copy')}catch(e){}
+      document.body.removeChild(t);
+      if(ok)done();else window.prompt('네이버 지도 링크',url);
+    }
+    if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(url).then(done,old);else old();
+  }
+  spots.forEach(function(s){
+    var a=s.querySelector('.acts a'),name=s.querySelector('h2').textContent;
+    s.querySelector('.share').addEventListener('click',function(){
+      var d={title:name,text:name,url:a.href};
+      if(navigator.share&&(!navigator.canShare||navigator.canShare(d)))navigator.share(d).catch(function(e){if(!e||e.name!=='AbortError')copy(d.url)});
+      else copy(d.url);
+    });
+  });
 })();
 </script>
 </body>
